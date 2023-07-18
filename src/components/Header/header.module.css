@@ -85,3 +85,16 @@
 .span1 svg {
   margin-top: 35px;
 }
+
+@media (max-width:991px) {
+
+  .bitech {
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+
+  }
+}

@@ -4,7 +4,7 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-// import About from "./about/index"
+import About from "./About/About"
 import { useEffect } from "react";
 import Landingpage from "./landingpage/Landingpage";
 
@@ -54,7 +54,7 @@ function App() {
 
   return (
     <Routes>
-      {/* <Route path="/about" element={<About />} /> */}
+      <Route path="/about" element={<About />} />
       <Route path="/" element={<Landingpage />} />
     </Routes>
   );

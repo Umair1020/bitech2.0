@@ -1,0 +1,104 @@
+.bitech1,
+.loremIpsumIs7 {
+    position: absolute;
+    left: 213px;
+}
+
+.bitech1 {
+    top: 5373px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.loremIpsumIs7 {
+    top: 5425px;
+    font-size: var(--font-size-lg);
+    color: var(--color-dimgray-200);
+    display: inline-block;
+    width: 377px;
+}
+
+.frameChild43 {
+    position: absolute;
+    height: 0.52%;
+    width: 7.13%;
+    top: 96.6%;
+    right: 78.88%;
+    bottom: 2.89%;
+    left: 14%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.quickLinks {
+    margin-block-start: 0;
+    margin-block-end: 25px;
+    letter-spacing: 0.07em;
+    line-height: 3%;
+    font-weight: 600;
+    font-family: var(--font-poppins);
+}
+
+.blankLine,
+.siteMap {
+    line-height: 0%;
+    font-weight: 500;
+    list-style: none;
+    cursor: pointer;
+}
+
+.blankLine {
+    margin-block-start: 0;
+    margin-block-end: 25px;
+    margin-left: 10px;
+   
+}
+.contactUsA37Container,
+.quickLinksHomeContainer,
+.getHelpOurContainer {
+    position: absolute;
+    top: 5392px;
+    left: 661px;
+    color: var(--color-dimgray-400);
+    font-family: var(--font-inter);
+}
+
+.frameChild44 {
+    position: absolute;
+    top: 5676px;
+    left: 210px;
+    background-color: var(--color-gainsboro);
+    width: 1180px;
+    height: 3px;
+}
+
+.siteMap {
+    margin-left: 20;
+}
+.contactUsA37Container,
+.getHelpOurContainer {
+    left: 1117px;
+    display: inline-block;
+    width: 324px;
+    height: 167px;
+}
+
+.getHelpOurContainer {
+    left: 909px;
+    height: 208px;
+}
+
+.bitechGraphicsallRights,
+.portfolioHowIt {
+    position: absolute;
+    top: 5700px;
+    left: 204px;
+    font-size: var(--font-size-mini);
+    color: var(--color-dimgray-100);
+    display: flex;
+}
+
+.portfolioHowIt {
+    left: 1054px;
+}

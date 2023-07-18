@@ -19,7 +19,7 @@
 }
 .homeAboutUsContainer {
   position: absolute;
-  top: 25px;
+  top: 50px;
   left: calc(50% - 250px);
 }
 .groupChild,
@@ -280,6 +280,18 @@
   right: 76.05%;
   bottom: 84.15%;
   left: 19.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frameInners{
+  position: absolute;
+  height: 1.1%;
+  width: 4.13%;
+  top: 14.75%;
+  right: 76.05%;
+  bottom: 84.15%;
+  left: 73%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -748,7 +760,7 @@
   top: 3582px;
   left: 153px;
   width: 186.09px;
-  height: 257px;
+  height: 37px;
 }
 .frameChild29,
 .frameChild30 {
@@ -1092,7 +1104,7 @@
   top: 72.21%;
   right: 82.69%;
   bottom: 27.34%;
-  left: 15.06%;
+  left:240px;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -1104,7 +1116,7 @@
   top: 72.2%;
   right: 57.94%;
   bottom: 27.32%;
-  left: 40.31%;
+  left: 645px;
 }
 .vectorIcon6 {
   height: 0.62%;
@@ -1112,7 +1124,7 @@
   top: 72.13%;
   right: 32.88%;
   bottom: 27.25%;
-  left: 65.19%;
+  left: 66.19%;
 }
 .support12gmailcom {
   margin-block-start: 0;
