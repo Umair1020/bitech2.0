@@ -63,7 +63,7 @@ const Header = () => {
               <Link href="/contact">Contact</Link>
             </div>
           </div>
-          <span className={headercss.span1} style={{ fontSize: '30px', cursor: 'pointer', marginLeft: "350px", color: "#000" }} onClick={openNav}><FaBars /></span>
+          <span className={headercss.span1} style={{ fontSize: '30px', cursor: 'pointer', marginLeft: "330px", color: "#000" }} onClick={openNav}><FaBars /></span>
         </div>
 
       </Mobile >

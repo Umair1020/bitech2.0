@@ -52,8 +52,9 @@
     margin-block-start: 0;
     margin-block-end: 25px;
     margin-left: 10px;
-   
+
 }
+
 .contactUsA37Container,
 .quickLinksHomeContainer,
 .getHelpOurContainer {
@@ -73,9 +74,21 @@
     height: 3px;
 }
 
+@media (max-width:991px) {
+    .divider {
+        position: absolute;
+        top: 5176px;
+        /* left: 210px; */
+        background-color: var(--color-gainsboro);
+        width: 100%;
+        height: 3px;
+    }
+}
+
 .siteMap {
     margin-left: 20;
 }
+
 .contactUsA37Container,
 .getHelpOurContainer {
     left: 1117px;

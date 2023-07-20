@@ -1,0 +1,47 @@
+.side {
+    border-radius: var(--br-11xl);
+    max-height: 400px;
+}
+
+.center {
+    background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
+    border-radius: var(--br-11xl);
+    max-height: 600px;
+}
+
+.center .btn {
+    border-radius: 20px;
+    background: #FFF;
+    margin: auto;
+    width: 180px;
+    margin-left: 20px;
+    height: 60px;
+}
+
+.side .btn {
+    border-radius: 20px;
+    background: linear-gradient(180deg, #3FABFF 0%, #222 100%);
+    width: 180px;
+    height: 60px;
+    color: #FFF;
+}
+
+.center .p {
+    text-align: center;
+    margin: auto;
+}
+
+.card1 {
+    text-align: center;
+    margin-top: 120px;
+    max-height: 600px;
+    height: 450px;
+}
+
+.image {
+    margin: auto;
+}
+
+.webcontainer {
+    margin-top: 30px;
+}
