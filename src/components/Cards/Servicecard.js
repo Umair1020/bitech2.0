@@ -21,13 +21,7 @@ const Servicecard = () => {
     }
     const sliderRef = useRef(null);
 
-    const next = () => {
-        sliderRef.current.slickNext();
-    };
-
-    const previous = () => {
-        sliderRef.current.slickPrev();
-    };
+   
     var settings = {
         infinite: false,
         speed: 500,
@@ -69,7 +63,9 @@ const Servicecard = () => {
                     <div className={style.parent}>
                         <div className={currentSlide === 0 ? style.center : style.side} key={0}>
                             <div className={style.card1} >
-                                <img className={style.image} src="/vector.svg" />
+                                <div className={style.serviceicon}> <br />
+                                    <img className={style.image} src="/vector.svg" />
+                                </div>
                                 <h2 className={style.webcontainer}>UI/UX Design</h2>
                                 <p className={styles.p}>Website Design</p>
                                 <p className={styles.p}>App Design</p>
@@ -85,7 +81,9 @@ const Servicecard = () => {
                     <div className={style.parent} >
                         <div className={currentSlide === 1 ? style.center : style.side} key={1}>
                             <div className={style.card1} >
-                                <img className={style.image} src="/serviceicon.png" />
+                                <div> <br /> 
+                                    <img className={style.image} src="/serviceicon.png" />
+                                </div><br />
                                 <h3>Development</h3>
                                 <p className={styles.logonDesign}>Logon Design</p>
                                 <p className={style.logonDesign}>Business Card</p>
@@ -103,7 +101,9 @@ const Servicecard = () => {
                     <div className={style.parent}>
                         <div className={currentSlide === 2 ? style.center : style.side} key={2}>
                             <div className={style.card1} >
-                                <img className={style.image} src="/group-4.svg" />
+                                <div><br />
+                                    <img className={style.image} src="/group-4.svg" />
+                                </div>
                                 <h2 className={style.webcontainer}>Graphic Design</h2>
                                 <p className={styles.logonDesign}>Logon Design</p>
                                 <p className={style.logonDesign}>Business Card</p>
@@ -118,54 +118,7 @@ const Servicecard = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="row">
-                        <div className="col-lg-4">
-                            <div className={currentSlide === 0 ? 'center' : 'side'} key={0}>
-                                <img alt="" src="/vector.svg" />
-                                <div className={styles.uiuxDesign}>
-                                    <div className={styles.uiuxDesign}>UI/UX Design</div>
-                                    <div className={styles.websiteDesignAppContainer}>
-                                        <p className={styles.wereADigital}>Website Design</p>
-                                        <p className={styles.wereADigital}>App Design</p>
-                                        <p className={styles.wereADigital}>User Stories</p>
-                                        <p className={styles.wereADigital}>User flow charts</p>
-                                        <p className={styles.wereADigital}>Wireframes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className={currentSlide === 1 ? 'center' : 'side'} key={1}>
-                                <img className={styles.logoimg} src="/group-4.svg" />
-                                <h2>Graphic Design</h2>
-                                <div className={style.logonDesignBusiness}>
-                                    <p className={styles.logonDesign}>Logon Design</p>
-                                    <p className={style.logonDesign}>Business Card</p>
-                                    <p className={style.logonDesign}>Stationery</p>
-                                    <p className={style.logonDesign}>Label Design</p>
-                                    <p className={style.logonDesign}>Letterhead</p>
-                                    <p className={style.logonDesign}>Billboard Design</p>
-                                    <p className={style.logonDesign}>etc...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4">
-                            <div className={currentSlide === 2 ? 'center' : 'side'} key={2}>
-                                <img alt="" src="/serviceicon.png" />
-                                <h3>Development</h3>
-                                <div className={style.logonDesignBusiness}>
-                                    <p className={styles.logonDesign}>Logon Design</p>
-                                    <p className={style.logonDesign}>Business Card</p>
-                                    <p className={style.logonDesign}>Stationery</p>
-                                    <p className={style.logonDesign}>Label Design</p>
-                                    <p className={style.logonDesign}>Letterhead</p>
-                                    <p className={style.logonDesign}>Billboard Design</p>
-                                    <p className={style.logonDesign}>etc...</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> */}
+                   
                 </Slider>
             </Mobile>
             <Desktop>
@@ -180,7 +133,8 @@ const Servicecard = () => {
                 </div>
                 <div className="row">
                     <div className="col-lg-4">
-                        <img className={styles.frameInner} alt="" src="/group-4.svg" />
+                        
+                            <img className={styles.frameInner} alt="" src="/group-4.svg" />
                         <div className={styles.graphicDesign}>Graphic Design</div>
                         <div className={styles.logonDesignBusinessContainer}>
                             <p className={styles.wereADigital}>Logon Design</p>

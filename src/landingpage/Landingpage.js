@@ -6,10 +6,14 @@ import Header from "../components/Header/Header";
 import Testimonial from "../components/Testimonial/Testimonial";
 import styles from "../index.module.css";
 import { Link } from "react-router-dom";
+import "../App.css"
+import Partic from "../components/Partical/partical";
+
 
 const Landingpage = () => {
   return (
     <div className={styles.rectangleParent}>
+      <Partic />
       <div className={styles.frameChild} />
       <Header />
       <div className={styles.wereADigitalContainer}>

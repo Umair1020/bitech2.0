@@ -1,0 +1,64 @@
+.aboutimg {
+    opacity: 0.3;
+    margin-top: 30px;
+    position: absolute;
+    object-fit: fill;
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.abouth3 {
+    position: absolute;
+    margin-top: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.abouth4 {
+    position: absolute;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 20px;
+    color: #519ADD;
+}
+
+.para {
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #656565;
+}
+.arrowpara{
+    position: absolute;
+   
+}
+.p1{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.paraimg{
+    margin-top: 70px;
+    position: absolute;
+}
+.innovativeWebsiteDesign,
+.uiuxDesignWith,
+.webAdnEmail {
+  position: absolute;
+  top: 1685px;
+  left: 100px;
+  font-size: var(--font-size-lgi);
+  font-weight: 300;
+  color: var(--color-black);
+}
+.vectorIcon1,
+.vectorIcon2,
+.vectorIcon3 {
+  height: 0.38%;
+  width: 5.38%;
+  top: 28.92%;
+  right: 85.5%;
+  bottom: 70.7%;
+  left: 5.13%;
+}

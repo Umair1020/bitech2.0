@@ -2,7 +2,9 @@
     border-radius: var(--br-11xl);
     max-height: 400px;
 }
-
+.side .p{
+    margin-top: 10px;
+}
 .center {
     background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
     border-radius: var(--br-11xl);
@@ -20,7 +22,7 @@
 
 .side .btn {
     border-radius: 20px;
-    background: linear-gradient(180deg, #3FABFF 0%, #222 100%);
+    background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
     width: 180px;
     height: 60px;
     color: #FFF;
@@ -29,13 +31,14 @@
 .center .p {
     text-align: center;
     margin: auto;
+    
 }
 
 .card1 {
     text-align: center;
     margin-top: 120px;
     max-height: 600px;
-    height: 450px;
+    height: 550px;
 }
 
 .image {
@@ -44,4 +47,14 @@
 
 .webcontainer {
     margin-top: 30px;
+}
+.vectorIcon2,
+.vectorIcon3 {
+  top: 29.64%;
+  bottom: 69.98%;
+}
+
+.vectorIcon3 {
+  top: 30.4%;
+  bottom: 69.23%;
 }
