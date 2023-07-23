@@ -104,7 +104,7 @@ const Partic = () => {
             },
             move: {
               enable: true,
-              speed: 4,
+              speed: 2,
               direction: "right",
               random: false,
               straight: false,

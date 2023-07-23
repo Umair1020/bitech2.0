@@ -10,9 +10,21 @@
 .abouth3 {
     position: absolute;
     margin-top: 70px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 20px;
+}
+
+.forward {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.para2 {
+    color: #656565;
+    text-align: center;
+    font-size: 18px;
 }
 
 .abouth4 {
@@ -30,35 +42,48 @@
     font-size: 18px;
     color: #656565;
 }
-.arrowpara{
+
+.arrowpara {
     position: absolute;
-   
+
 }
-.p1{
+
+.p1 {
     margin-top: 80px;
     margin-left: 30px;
 }
-.paraimg{
+
+
+.CAPABILITIES {
+    color: #519ADD;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 250px;
+}
+
+.paraimg {
     margin-top: 70px;
     position: absolute;
 }
+
 .innovativeWebsiteDesign,
 .uiuxDesignWith,
 .webAdnEmail {
-  position: absolute;
-  top: 1685px;
-  left: 100px;
-  font-size: var(--font-size-lgi);
-  font-weight: 300;
-  color: var(--color-black);
+    position: absolute;
+    top: 1685px;
+    left: 100px;
+    font-size: var(--font-size-lgi);
+    font-weight: 300;
+    color: var(--color-black);
 }
+
 .vectorIcon1,
 .vectorIcon2,
 .vectorIcon3 {
-  height: 0.38%;
-  width: 5.38%;
-  top: 28.92%;
-  right: 85.5%;
-  bottom: 70.7%;
-  left: 5.13%;
+    height: 0.38%;
+    width: 5.38%;
+    top: 28.92%;
+    right: 85.5%;
+    bottom: 70.7%;
+    left: 5.13%;
 }

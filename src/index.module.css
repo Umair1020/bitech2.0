@@ -94,6 +94,9 @@
     top: -125px !important;
     width: 125px !important;
     height: 40px !important;
+    border-radius: 20px !important;
+    background: linear-gradient(180deg, #3FABFF 100%, #222 100%) !important;
+
   }
 
   .learnMore1 {
@@ -115,12 +118,19 @@
     font-size: 15px !important;
   }
 
+  .ourServices {
+    font-size: 28px !important;
+  }
+
+  .ourServices1 {
+    display: none !important;
+  }
+
   .ourServices,
   .ourServices1 {
     position: absolute;
     top: 550px !important;
-    left: 50px !important;
-    font-size: 30px !important;
+    left: 45px !important;
     font-weight: 600;
   }
 
@@ -137,6 +147,7 @@
 
 .ourServices1 {
   top: 3296px;
+
 }
 
 .messageToUs {
@@ -209,6 +220,7 @@
 .groupChild2 {
   top: 0;
   left: 0;
+  background: linear-gradient(180deg, #3FABFF 100%, #222 100%) !important;
 }
 
 .groupChild2 {
@@ -305,7 +317,9 @@
   color: var(--color-gray-300);
   text-align: left;
 }
-
+@media (max-width:991px) {
+  
+}
 .feelFreeToContactWithUsParent {
   position: absolute;
   top: 3955px;
@@ -745,7 +759,7 @@
   top: 28.92%;
   right: 85.5%;
   bottom: 70.7%;
-  left: 13.13%;
+  left: 11.7%;
 }
 
 @media (max-width:991px) {
@@ -755,7 +769,7 @@
   .vectorIcon3 {
     height: 0.38%;
     width: 5.38%;
-    top: 25%;
+    top: 23.6%;
     right: 85.5%;
     bottom: 70.7%;
     left: 7.13%;
@@ -763,12 +777,12 @@
 
   .vectorIcon2,
   .vectorIcon3 {
-    top: 25.64% !important;
+    top: 24.2% !important;
     bottom: 69.98%;
   }
 
   .vectorIcon3 {
-    top: 26.4% !important;
+    top: 24.8% !important;
     bottom: 69.23%;
   }
 
@@ -776,7 +790,7 @@
   .uiuxDesignWith,
   .webAdnEmail {
     position: absolute;
-    top: 1454px;
+    top: 1375px;
     left: 60px !important;
     font-size: var(--font-size-lgi);
     font-weight: 300;
@@ -785,12 +799,12 @@
 
   .uiuxDesignWith,
   .webAdnEmail {
-    top: 1495px !important;
+    top: 1409px !important;
     left: 60px !important;
   }
 
   .webAdnEmail {
-    top: 1540px !important;
+    top: 1440px !important;
   }
 }
 
@@ -932,18 +946,6 @@
 
 .frameChild22 {
   left: 731px;
-}
-
-.frameChild23,
-.frameChild24,
-.frameChild25 {
-  position: absolute;
-  top: 3413px;
-  left: 0;
-  background-color: var(--color-white);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
-  width: 531px;
-  height: 376px;
 }
 
 .frameChild24,
@@ -1265,9 +1267,9 @@
 .frameChild42 {
   position: absolute;
   top: 5342px;
-  left: -17px;
+  /* left: -17px; */
   background-color: #f9fafc;
-  width: 1675px;
+  width: 100%;
   height: 481px;
 }
 
@@ -1405,7 +1407,7 @@
   top: 72.13%;
   right: 32.88%;
   bottom: 27.25%;
-  left: 66.19%;
+  left: 59.19%;
 }
 
 .support12gmailcom {
@@ -1462,7 +1464,7 @@
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  height: 5823px;
+  /* height: 5823px; */
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-xl);

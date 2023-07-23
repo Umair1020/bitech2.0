@@ -70,6 +70,7 @@ body {
 
 .contact {
   text-decoration: none;
+  margin-top: 10vh;
   margin-left: 25px;
 }
 
@@ -146,14 +147,14 @@ li a:hover {
 //footer // */
 
 #footer {
-  background: #fff;
   padding: 0 0 30px 0;
   color: #47536e;
-  font-size: 14px;
-  background: #eff2f8;
-  margin-top: 4000px;
+  /* font-size: 14px; */
+  background-color: #F9FAFC;
 }
-
+#footer .footer-top{
+  background-color: #F9FAFC;
+}
 #footer .footer-newsletter {
   padding: 50px 0;
   background: #eff2f8;
@@ -213,10 +214,11 @@ li a:hover {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 #footer .footer-top .footer-contact h4 {
-  font-size: 22px;
+  font-size: 30px;
   margin: 0 0 30px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
@@ -225,15 +227,23 @@ li a:hover {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #8a8c95;
 }
-
+@media (max-width:991px) {
+  #footer .footer-top .footer-contact p {
+    font-size: 14px !important;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #8a8c95;
+  }
+}
 #footer .footer-top h4 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   color: #47536e;
   position: relative;
@@ -330,26 +340,46 @@ li a:hover {
 }
 
 /* testimonials */
+.testimonials {
+  margin-top: 230vh;
+}
+@media (max-width:991px) {
+  .testimonials {
+    margin-top: 0vh !important;
+  }
+}
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
-  margin: 40px 30px;
   box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
   background: #fff;
-  min-height: 320px;
-  display: flex;
+  min-height: auto;
+  display: block;
   flex-direction: column;
   text-align: center;
   transition: 0.3s;
 }
 
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
+.testimonials h2 {
+  color: #848484;
+  text-align: center;
+  margin-top: 100px;
 }
 
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
+.testmonialpara {
+  color: #222;
+  font-weight: 600;
+  text-align: center;
+  font-size: 50px;
+}
+
+@media (max-width:991px) {
+  .testmonialpara {
+    color: #222;
+    font-weight: 600;
+    text-align: center;
+    font-size: 30px !important;
+  }
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -374,12 +404,14 @@ li a:hover {
 
 .testimonials .testimonial-item p {
   font-style: italic;
-  margin: 0 auto 15px auto;
+  /* margin: 0 auto 15px auto; */
+  color: #656565;
+  font-size: 15px;
 }
 
 .testimonials .swiper-pagination {
   margin-top: 20px;
-  position: relative;
+  /* position: relative; */
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
@@ -395,7 +427,7 @@ li a:hover {
 }
 
 .testimonials .swiper-slide {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 @media (max-width: 1199px) {
@@ -412,5 +444,210 @@ li a:hover {
   .testimonials .swiper-slide-next {
     opacity: 1;
     transform: scale(1.12);
+  }
+}
+
+.contact .info-box {
+  color: #313030;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #ff5821;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #ffded4;
+  float: left;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #656262;
+  font-weight: 700;
+  margin: 10px 0 10px 68px;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin: 0 0 0 68px;
+}
+
+.contact .active {
+  background-color: #009cd6;
+  color: #fff;
+}
+
+.box {
+  background-color: #ffffff;
+  /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Box shadow with increased opacity */
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.number {
+  color: #009cd6;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.title {
+  color: #616161;
+  font-size: 20px;
+}
+
+property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.number {
+  animation: counter 10s infinite alternate ease-in-out;
+  /* Increase the animation duration to slow down */
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+
+.number::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  0% {
+    --num: 0;
+  }
+
+  2% {
+    --num: 2;
+  }
+
+  3% {
+    --num: 3;
+  }
+
+  4% {
+    --num: 4;
+  }
+
+  5% {
+    --num: 5;
+  }
+
+  6% {
+    --num: 6;
+  }
+
+  /* Continue incrementing the variable up to 100% */
+  /* Add steps for each number up to 100 */
+  100% {
+    --num: 100;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact {
+    text-decoration: none;
+    margin-top: 10vh !important;
+  }
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.contact .php-email-form input {
+  height: 70px;
+  margin-top: 30px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+height: 229px;
+}
+
+
+.contact .php-email-form button[type=submit] {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #3FABFF 0%, #222 100%);
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  width: 180px;
+  margin-top: 20px;
+  font-size: 15px;
+  height: 60px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #00805d;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }

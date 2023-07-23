@@ -1,8 +1,14 @@
 import styles from "../../index.module.css"
 import { useMediaQuery } from "react-responsive"
 import style from "./about.module.css"
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import { useRef, useState } from "react";
 
 const About = () => {
+    const [currentSlide, setCurrentSlide] = useState(0)
     const Desktop = ({ children }) => {
         const isDesktop = useMediaQuery({ minWidth: 992 })
         return isDesktop ? children : null
@@ -12,6 +18,42 @@ const About = () => {
         const isMobile = useMediaQuery({ maxWidth: 767 })
         return isMobile ? children : null
     }
+    const sliderRef = useRef(null);
+
+
+    var settings = {
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    // dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
     return (
         <div>
@@ -33,7 +75,57 @@ const About = () => {
                 <img className={styles.vectorIcon1} alt="" src="/vector1.svg" />
                 <img className={styles.vectorIcon2} alt="" src="/vector1.svg" />
                 <img className={styles.vectorIcon3} alt="" src="/vector1.svg" />
-            </Mobile>
+                <div><br /><br /><br /><br /><br /><br /><br />
+                    <h4 className={style.CAPABILITIES}>OUR CAPABILITIES</h4>
+                    <h3 className={style.forward}>Forward Thinking Team Of
+                        Designers & Developers</h3>
+                    <p className={style.para2}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                    <Slider ref={sliderRef} {...settings}>
+                        <div className={style.parent}>
+                            <div className={currentSlide === 0 ? style.center : style.side} key={0}>
+                                <div className="col-md-3 col-sm-3 " >
+                                <div className="box text-center p-4">
+                                    <div className="number" data-to="20" data-speed="150" ></div>
+                                    <div className="title">Software Development</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.parent} >
+                            <div className={currentSlide === 1 ? style.center : style.side} key={1}>
+                                <div className="col-md-3 col-sm-3 " key={2}>
+                                <div className="box text-center p-4">
+                                    <div className="number" data-to="200" data-speed="150"></div>
+                                    <div className="title">Graphic Design</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.parent}>
+                            <div className={currentSlide === 2 ? style.center : style.side} key={2}>
+                                <div className="col-md-3 col-sm-3 " key={3}>
+                                <div className="box text-center p-4">
+                                    <div className="number" data-to="200" data-speed="150"></div>
+                                    <div className="title">Game Design</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={style.parent}>
+                            <div className={currentSlide === 3 ? style.center : style.side} key={3}>
+                                <div className="col-md-3 col-sm-3 " key={4}>
+                                <div className="box text-center p-4">
+                                    <div className="number" data-to="200" data-speed="150"></div>
+                                    <div className="title"> Web Development</div>
+                                </div>
+</div>
+                            </div>
+                        </div>
+                    </Slider>
+
+                </div >
+            </Mobile >
             <Desktop>
                 <div className={styles.frameChild14} />
                 <div className={styles.innovativeWebsiteDesign}>
@@ -104,7 +196,7 @@ const About = () => {
                 <div className={styles.frameChild24} />
                 <div className={styles.frameChild25} />
             </Desktop >
-        </div>
+        </div >
 
     )
 }

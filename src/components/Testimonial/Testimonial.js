@@ -7,9 +7,19 @@ import { useMediaQuery } from "react-responsive";
 import style from "../Cards/service.module.css"
 
 const Testimonial = () => {
+    const [currentSlide, setCurrentSlide] = useState(0)
+    const Desktop = ({ children }) => {
+        const isDesktop = useMediaQuery({ minWidth: 992 })
+        return isDesktop ? children : null
+    }
+
+    const Mobile = ({ children }) => {
+        const isMobile = useMediaQuery({ maxWidth: 767 })
+        return isMobile ? children : null
+    }
     const sliderRef = useRef(null);
 
-    const [currentSlide, setCurrentSlide] = useState(0)
+
     var settings = {
         infinite: false,
         speed: 500,
@@ -23,7 +33,7 @@ const Testimonial = () => {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     infinite: true,
-                    // dots: true
+                    dots: true
                 }
             },
             {
@@ -43,183 +53,189 @@ const Testimonial = () => {
             }
         ]
     };
-    const Desktop = ({ children }) => {
-        const isDesktop = useMediaQuery({ minWidth: 992 })
-        return isDesktop ? children : null
-    }
 
-    const Mobile = ({ children }) => {
-        const isMobile = useMediaQuery({ maxWidth: 767 })
-        return isMobile ? children : null
-    }
+
     return (
         <div>
             <Mobile>
-                <Slider ref={sliderRef} {...settings}>
-                    {/* <div>
-                        <div className={currentSlide === 0 ? style.center : style.side} key={0}>
-                            <div className={style.card1} >
-                                <div className={style.serviceicon}> <br />
-                                    <img className={style.image} src="/vector.svg" />
-                                </div>
-                                <h2 className={style.webcontainer}>UI/UX Design</h2>
-                                <p className={styles.p}>Website Design</p>
-                                <p className={styles.p}>App Design</p>
-                                <p className={styles.p}>User Stories</p>
-                                <p className={styles.p}>User flow charts</p>
-                                <p className={styles.p}>Wireframes</p>
-                                <button className={style.btn}>
-                                    <p className={style.p}>Learn More</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div className={currentSlide === 1 ? style.center : style.side} key={1}>
-                            <div className={style.card1} >
-                                <div> <br /> 
-                                    <img className={style.image} src="/serviceicon.png" />
-                                </div><br />
-                                <h3>Development</h3>
-                                <p className={styles.logonDesign}>Logon Design</p>
-                                <p className={style.logonDesign}>Business Card</p>
-                                <p className={style.logonDesign}>Stationery</p>
-                                <p className={style.logonDesign}>Label Design</p>
-                                <p className={style.logonDesign}>Letterhead</p>
-                                <p className={style.logonDesign}>Billboard Design</p>
-                                <p className={style.logonDesign}>etc...</p>
-                                <button className={style.btn}>
-                                    <p className={style.p}>Learn More</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div >
-                        <div className={currentSlide === 2 ? style.center : style.side} key={2}>
-                            <div className={style.card1} >
-                                <div><br />
-                                    <img className={style.image} src="/group-4.svg" />
-                                </div>
-                                <h2 className={style.webcontainer}>Graphic Design</h2>
-                                <p className={styles.logonDesign}>Logon Design</p>
-                                <p className={style.logonDesign}>Business Card</p>
-                                <p className={style.logonDesign}>Stationery</p>
-                                <p className={style.logonDesign}>Label Design</p>
-                                <p className={style.logonDesign}>Letterhead</p>
-                                <p className={style.logonDesign}>Billboard Design</p>
-                                <p className={style.logonDesign}>etc...</p>
-                                <button className={style.btn}>
-                                    <p className={style.p}>Learn More</p>
-                                </button>
-                            </div>
-                        </div>
-                    </div> */}
-                    <section id="testimonials" className="testimonials">
 
-                        <div className="container" data-aos="fade-up">
+                <section id="testimonials" className="testimonials">
 
-                            <header className="section-header">
-                                <h2>Testimonials</h2>
-                                <p>What they are saying about us</p>
-                            </header>
+                    <div className="container" data-aos="fade-up">
 
-                            <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200" >
-                                <div className="swiper-wrapper">
-                                    <div className={currentSlide === 0 ? "center" : "side"} key={0}>
+                        <header className="section-header">
+                            <h2>Testimonials</h2>
+                            <p className="testmonialpara">Our Services & Our Goal</p>
+                        </header>
+                        <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200" >
+                            <div className="swiper-wrapper">
+                                <Slider ref={sliderRef} {...settings} >
+                                    <div className={style.parent}>
+                                        <div className={currentSlide === 0 ? style.center2 : style.side2} key={0}>
+                                            <div className="swiper-slide">
+                                                <div className="testimonial-item" key={0}>
+                                                    <div className="profile mt-auto">
+                                                        <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" />
+                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <h3>Saul Goodman</h3>
+                                                        <h4>Ceo &amp; Founder</h4>
+                                                    </div>
+                                                    <p>
+                                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={style.parent}>
+                                        <div className={currentSlide === 1 ? style.center2 : style.side2} key={1}>
+                                            <div className="swiper-slide">
+                                                <div className="testimonial-item">
+                                                    <div className="profile mt-auto">
+                                                        <img src="/ellipse-18@2x.png" class="testimonial-img" alt="" />
+                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <h3>Sara Wilsson</h3>
+                                                        <h4>Designer</h4>
+                                                    </div>
+                                                    <p>
+                                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={style.parent}>
+                                        <div className={currentSlide === 2 ? style.center2 : style.side2} key={2}>
+                                            <div className="swiper-slide" >
+                                                <div className="testimonial-item" key={2}>
+                                                    <div className="profile mt-auto">
+                                                        <img src="/ellipse-19@2x.png" class="testimonial-img" alt="" />
+                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <h3>Jena Karlis</h3>
+                                                        <h4>Store Owner</h4>
+                                                    </div>
+                                                    <p>
+                                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className={style.parent}>
+                                        <div className={currentSlide === 3 ? style.center2 : style.side2} key={3}>
+                                            <div className="swiper-slide" >
+                                                <div className="testimonial-item" key={3}>
+                                                    <div className="profile mt-auto">
+                                                        <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" />
+                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <h3>Matt Brandon</h3>
+                                                        <h4>Freelancer</h4>
+                                                    </div>
+                                                    <p>
+                                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                                    </p>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className={currentSlide === 4 ? style.center2 : style.side2} key={4}>
                                         <div className="swiper-slide">
-                                            <div className="testimonial-item">
-                                                {/* <div class="stars">
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                            </div> */}
-                                                <p>
-                                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                                                </p>
+                                            <div className="testimonial-item" >
                                                 <div className="profile mt-auto">
                                                     <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" />
-                                                    <h3>Saul Goodman</h3>
-                                                    <h4>Ceo &amp; Founder</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={currentSlide === 1 ? "center" : 'side'} key={1}>
-                                        <div className="swiper-slide">
-                                            <div className="testimonial-item">
-                                                {/* <div class="stars">
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                            </div> */}
-                                                <p>
-                                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                                </p>
-                                                <div className="profile mt-auto">
-                                                    <img src="/ellipse-18@2x.png" class="testimonial-img" alt="" />
-                                                    <h3>Sara Wilsson</h3>
-                                                    <h4>Designer</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={currentSlide === 2 ? "center" : 'side'} key={2}>
-                                        <div className="swiper-slide" >
-                                            <div className="testimonial-item">
-                                                {/* <div class="stars">
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                            </div> */}
-                                                <p>
-                                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                                                </p>
-                                                <div className="profile mt-auto">
-                                                    <img src="/ellipse-19@2x.png" class="testimonial-img" alt="" />
-                                                    <h3>Jena Karlis</h3>
-                                                    <h4>Store Owner</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={currentSlide === 3 ? "center" : 'side'} key={3}>
-                                        <div className="swiper-slide" >
-                                            <div className="testimonial-item">
-                                                {/* <div class="stars">
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                            </div> */}
-                                                <p>
-                                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                                                </p>
-                                                <div className="profile mt-auto">
-                                                    <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" />
-                                                    <h3>Matt Brandon</h3>
-                                                    <h4>Freelancer</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className={currentSlide === 4 ? "center" : 'side'} key={4}>
-                                        <div className="swiper-slide">
-                                            <div className="testimonial-item">
-                                                {/* <div class="stars">
-                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                            </div> */}
-                                                <p>
-                                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                                                </p>
-                                                <div className="profile mt-auto">
-                                                    <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" />
+                                                    <img alt="" src="/group-10.svg" className="m-auto" />
                                                     <h3>John Larson</h3>
                                                     <h4>Entrepreneur</h4>
                                                 </div>
+                                                <p>
+                                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                                </p>
+
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="swiper-pagination"></div>
+                                </Slider>
                             </div>
-
                         </div>
-                    </section>
-                </Slider>
+
+                    </div>
+                </section>
             </Mobile>
             <Desktop>
-                <img className={styles.ellipseIcon} alt="" src="/ellipse-17@2x.png" />
+                <section id="testimonials" className="testimonials">
+                    <div className="container-fluid">
+                        <header className="section-header">
+                            <h2>Testimonials</h2>
+                            <p className="testmonialpara">Our Services & Our Goal</p>
+                        </header>
+                        <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200" >
+                            <div className="swiper-wrapper">
+                                <div class="row justify-content-center">
+
+                                    <div class="col-xl-3 col-lg-3 mt-4" data-aos="fade-up">
+                                        <div className={style.parent}>
+
+                                            <div className="swiper-slide">
+                                                <div className="testimonial-item" key={0}>
+                                                    <div className="profile mt-auto">
+                                                        <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" /><br />
+                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <h3>Saul Goodman</h3>
+                                                        <h4>Ceo &amp; Founder</h4>
+                                                    </div>
+                                                    <p>
+                                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-lg-3 mt-4" data-aos="fade-up">
+                                        <div className="swiper-slide">
+                                            <div className="testimonial-item">
+                                                <div className="profile mt-auto">
+                                                    <img src="/ellipse-18@2x.png" class="testimonial-img" alt="" /><br />
+                                                    <img alt="" src="/group-10.svg" className="m-auto" />
+                                                    <h3>Sara Wilsson</h3>
+                                                    <h4>Designer</h4>
+                                                </div>
+                                                <p>
+                                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 mt-4" data-aos="fade-up">
+                                        <div className="swiper-slide" >
+                                            <div className="testimonial-item" key={2}>
+                                                <div className="profile mt-auto">
+                                                    <img src="/ellipse-19@2x.png" class="testimonial-img" alt="" /><br />
+                                                    <img alt="" src="/group-10.svg" className="m-auto" />
+                                                    <h3>Jena Karlis</h3>
+                                                    <h4>Store Owner</h4>
+                                                </div>
+                                                <p>
+                                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* <img className={styles.ellipseIcon} alt="" src="/ellipse-17@2x.png" />
                 <img className={styles.frameChild26} alt="" src="/ellipse-18@2x.png" />
                 <img className={styles.frameChild27} alt="" src="/ellipse-19@2x.png" />
                 <img className={styles.frameChild28} alt="" src="/Group77.png" />
@@ -241,7 +257,7 @@ const Testimonial = () => {
                     <div className={styles.groupChild14} />
                     <div className={styles.groupChild15} />
                     <div className={styles.groupChild16} />
-                </div>
+                </div> */}
             </Desktop>
         </div>
 

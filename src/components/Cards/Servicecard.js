@@ -21,7 +21,7 @@ const Servicecard = () => {
     }
     const sliderRef = useRef(null);
 
-   
+
     var settings = {
         infinite: false,
         speed: 500,
@@ -72,7 +72,7 @@ const Servicecard = () => {
                                 <p className={styles.p}>User Stories</p>
                                 <p className={styles.p}>User flow charts</p>
                                 <p className={styles.p}>Wireframes</p>
-                                <button className={style.btn}>
+                                <button className={style.btn2}>
                                     <p className={style.p}>Learn More</p>
                                 </button>
                             </div>
@@ -81,7 +81,7 @@ const Servicecard = () => {
                     <div className={style.parent} >
                         <div className={currentSlide === 1 ? style.center : style.side} key={1}>
                             <div className={style.card1} >
-                                <div> <br /> 
+                                <div> <br />
                                     <img className={style.image} src="/serviceicon.png" />
                                 </div><br />
                                 <h3>Development</h3>
@@ -118,82 +118,74 @@ const Servicecard = () => {
                             </div>
                         </div>
                     </div>
-                   
+
                 </Slider>
             </Mobile>
             <Desktop>
-                <div className={styles.services1}>SERVICES</div>
-                <div className={styles.rectangle1}>
-                    {/* <div className={styles.groupChild3} />
-                    <div className={styles.groupChild4} />
-                    <div className={styles.groupChild5} />
-                    <div className={styles.groupChild6} />
-                    <div className={styles.groupChild7} />
-                    <div className={styles.groupChild8} /> */}
-                </div>
-                <div className="row">
-                    <div className="col-lg-4">
+                <div className="container">
+                    <div className="row justify-content-center align-items-center">
+                        <div className="col-md-3 col-sm-6 mx-5" >
                         
-                            <img className={styles.frameInner} alt="" src="/group-4.svg" />
-                        <div className={styles.graphicDesign}>Graphic Design</div>
-                        <div className={styles.logonDesignBusinessContainer}>
-                            <p className={styles.wereADigital}>Logon Design</p>
-                            <p className={styles.wereADigital}>Business Card</p>
-                            <p className={styles.wereADigital}>Stationery</p>
-                            <p className={styles.wereADigital}>Label Design</p>
-                            <p className={styles.wereADigital}>Letterhead</p>
-                            <p className={styles.wereADigital}>Billboard Design</p>
-                            <p className={styles.wereADigital}>etc...</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-4">
-                        <img className={styles.frameInners} alt="" src="/serviceicon.png" />
-                        <div className={styles.development}>Development</div>
-                        <div className={styles.logonDesignBusinessContainer1}>
-                            <p className={styles.wereADigital}>Logon Design</p>
-                            <p className={styles.wereADigital}>Business Card</p>
-                            <p className={styles.wereADigital}>Stationery</p>
-                            <p className={styles.wereADigital}>Label Design</p>
-                            <p className={styles.wereADigital}>Letterhead</p>
-                            <p className={styles.wereADigital}>Billboard Design</p>
-                            <p className={styles.wereADigital}>etc...</p>
-                        </div>
-                    </div>
-                    {/* <div className={styles.ellipseDiv} />
-                    <div className={styles.frameChild1} />
-                    <div className={styles.frameChild2} />
-                    <div className={styles.frameChild3} />
-                    <div className={styles.frameChild4} />
-                    <div className={styles.frameChild5} />
-                    <div className={styles.frameChild6} />
-                    <div className={styles.frameChild7} />
-                    <div className={styles.frameChild8} />
-                    <div className={styles.frameChild9} />
-                    <div className={styles.frameChild10} />
-                    <div className={styles.frameChild11} />
-                    <div className={styles.frameChild12} />
-                    <div className={styles.frameChild13} /> */}
-                    <div className="col-lg-4">
-                        <div className={styles.uiuxDesignParent}>
-                            <div className={styles.uiuxDesign}>UI/UX Design</div>
-                            <div className={styles.websiteDesignAppContainer}>
-                                <p className={styles.wereADigital}>Website Design</p>
-                                <p className={styles.wereADigital}>App Design</p>
-                                <p className={styles.wereADigital}>User Stories</p>
-                                <p className={styles.wereADigital}>User flow charts</p>
-                                <p className={styles.wereADigital}>Wireframes</p>
+                                <div className={style.card1} >
+                                    <div> <br />
+                                        <img className={style.image} src="/serviceicon.png" />
+                                    </div><br />
+                                    <h3>Development</h3>
+                                    <p className={styles.logonDesign}>Logon Design</p>
+                                    <p className={style.logonDesign}>Business Card</p>
+                                    <p className={style.logonDesign}>Stationery</p>
+                                    <p className={style.logonDesign}>Label Design</p>
+                                    <p className={style.logonDesign}>Letterhead</p>
+                                    <p className={style.logonDesign}>Billboard Design</p>
+                                    <p className={style.logonDesign}>etc...</p>
+                                    <button className={style.btn}>
+                                        <p className={style.p}>Learn More</p>
+                                    </button>
+                            
                             </div>
-                            {/* <div className={styles.groupChild9} />
-                            <div className={styles.groupChild10} />
-                            <div className={styles.groupChild11} />
-                            <div className={styles.groupChild12} />
-                            <div className={styles.groupChild13} /> */}
+                        </div>
+                        <div className="col-md-3 col-sm-6 mx-5" >
+                          
+                                <div className={style.card2} >
+                                    <div className={style.serviceicon}> <br />
+                                        <img className={style.image2} src="/vector.svg" />
+                                    </div>
+                                    <h2 className={style.webcontainer}>UI/UX Design</h2>
+                                    <p className={styles.p}>Website Design</p>
+                                    <p className={styles.p}>App Design</p>
+                                    <p className={styles.p}>User Stories</p>
+                                    <p className={styles.p}>User flow charts</p>
+                                    <p className={styles.p}>Wireframes</p>
+                                    <button className={style.btn2}>
+                                        <p className={style.p}>Learn More</p>
+                                    </button>
+                          
+                            </div>
+                        </div>
+                        <div className="col-md-3 col-sm-6 mx-5" >
+                           
+                                <div className={style.card1} >
+                                    <div><br />
+                                        <img className={style.image} src="/group-4.svg" />
+                                    </div>
+                                    <h2 className={style.webcontainer}>Graphic Design</h2>
+                                    <p className={styles.logonDesign}>Logon Design</p>
+                                    <p className={style.logonDesign}>Business Card</p>
+                                    <p className={style.logonDesign}>Stationery</p>
+                                    <p className={style.logonDesign}>Label Design</p>
+                                    <p className={style.logonDesign}>Letterhead</p>
+                                    <p className={style.logonDesign}>Billboard Design</p>
+                                    <p className={style.logonDesign}>etc...</p>
+                                    <button className={style.btn}>
+                                        <p className={style.p}>Learn More</p>
+                                    </button>
+                                </div>
                         </div>
                     </div>
-                    <img className={styles.vectorIcon} alt="" src="/vector.svg" />
                 </div>
-            </Desktop>
-        </div>
+            </Desktop >
+
+        </div >
     )
 }
 

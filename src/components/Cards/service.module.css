@@ -1,44 +1,58 @@
-.side {
-    border-radius: var(--br-11xl);
-    max-height: 400px;
-}
-.side .p{
+/* @media (max-width: 991px) { */
+
+.p {
     margin-top: 10px;
 }
-.center {
-    background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
-    border-radius: var(--br-11xl);
-    max-height: 600px;
-}
 
-.center .btn {
+.btn2 {
     border-radius: 20px;
-    background: #FFF;
+    background: #FFF  !important;
     margin: auto;
     width: 180px;
-    margin-left: 20px;
     height: 60px;
+    border: 2px solid #fff;
 }
 
-.side .btn {
+.btn {
     border-radius: 20px;
     background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
     width: 180px;
     height: 60px;
     color: #FFF;
+    border: 2px solid #3FABFF;
+}
+.center{
+    background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
+    border-radius: var(--br-11xl);
+    color: #FFF;
+    text-align: center;
+    margin-top: 80px;
+    height: 500px;
+}
+.side{
+    margin-top: 10px;
+    height: 460px;
+}
+.card2 {
+    background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
+    border-radius: var(--br-11xl);
+    color: #FFF;
+    text-align: center;
+    margin-top: 120px;
+    height: 500px;
 }
 
-.center .p {
+.p {
     text-align: center;
     margin: auto;
-    
+
 }
 
 .card1 {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     max-height: 600px;
-    height: 550px;
+    height: 500px;
 }
 
 .image {
@@ -48,13 +62,26 @@
 .webcontainer {
     margin-top: 30px;
 }
+
 .vectorIcon2,
 .vectorIcon3 {
-  top: 29.64%;
-  bottom: 69.98%;
+    top: 29.64%;
+    bottom: 69.98%;
 }
 
 .vectorIcon3 {
-  top: 30.4%;
-  bottom: 69.23%;
+    top: 30.4%;
+    bottom: 69.23%;
+}
+
+/* } */
+
+.center2{
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+}
+.side2{
+    background: #FFF;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+    
 }
