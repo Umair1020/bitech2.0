@@ -9,40 +9,44 @@ import { Link } from "react-router-dom";
 import "../App.css"
 import Partic from "../components/Partical/partical";
 import 'animate.css';
+import style from "../components/Cards/service.module.css"
 
 const Landingpage = () => {
   return (
     <div className={styles.rectangleParent}>
-      <Partic />
+      {/* <Partic /> */}
       {/* <div className={styles.frameChild} /> */}
       <Header />
-      <div className={styles.wereADigitalContainer}>
-        <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>We’re A Digital</p>
-        <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>{`Software House `}</p>
-        <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>Startup Business</p>
-      </div>
-      <div className={styles.ourServices}>{`Our Services & Our Goal`}</div>
-    
-      <img className={styles.frameItem} alt="" src="/group-2.svg" />
-      <div className={`animate__animated animate__fadeInUp ${styles.loremIpsumIs}`}>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum
-      </div>
-      <div className={styles.rectangleContainer}>
-        {/* <div className={styles.groupItem} /> */}
-        <div className={styles.groupDiv}>
-          {/* <div className={styles.groupInner} />
-          <div className={styles.rectangleDiv} /> */}
-          <div className={styles.groupChild1} />
-
-          <div className={styles.sendMessage}>Send Message</div>
-          <div className={styles.learnMore1}>Learn More</div>
-
+      <div className="container">
+        <div className="row">
+          <div className="col-6 ">
+            <div className={styles.wereADigitalContainer}>
+              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>Welcome to BITECH 
+              </p>
+              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>{` Visualizing Your Ideas   `}</p>
+              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>with Innovative Solutions</p>
+            </div>
+            <div className={`animate__animated animate__fadeInUp ${styles.loremIpsumIs}`}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum
+            </div> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <button className={style.btn}>
+              <p className={style.p}>Learn More</p>
+            </button>
+          </div>
+          <div className="col-6 d-flex justify-content-end">
+            <img className='groupimg' alt="" src="/group-2.svg" />
+          </div>
         </div>
-
       </div>
-      <div className={`animate__animated animate__fadeInDown ${styles.services}`}>SERVICES</div>
-      <div className={styles.testimonials}>TESTIMONIALS</div>
+
+      {/* <div className={styles.ourServices}>{`Our Services & Our Goal`}</div> */}
+
+
+
+
+      {/* <div className={`animate__animated animate__fadeInDown ${styles.services}`}>SERVICES</div> */}
+      {/* <div className={styles.testimonials}>TESTIMONIALS</div> */}
       {/* <div className={styles.feelFreeToContactWithUsParent}>
         <div className={styles.feelFreeToContainer}>
           <p className={styles.wereADigital}>
@@ -58,9 +62,10 @@ const Landingpage = () => {
       </div> */}
       <Servicecard />
       <About />
+
       <Testimonial />
       <Contact />
-      <Footer />
+      <Footer className="animate__animated animate__backInLeft" />
     </div>
   );
 };

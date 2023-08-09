@@ -64,7 +64,7 @@
 .wereADigitalContainer {
   position: absolute;
   top: 199px;
-  left: 211px;
+  /* left: 211px; */
   font-size: 62px;
   font-weight: 600;
 }
@@ -114,7 +114,6 @@
   }
 
   .services {
-    margin-top: 415px !important;
     font-size: 15px !important;
   }
 
@@ -172,7 +171,6 @@
 .loremIpsumIs {
   position: absolute;
   top: 436px;
-  left: 213px;
   font-weight: 300;
   display: inline-block;
   width: 509px;
@@ -201,7 +199,7 @@
   background-color: var(--color-white);
 }
 
-.groupChild1,
+/* .groupChild1, */
 .groupChild2,
 .groupInner,
 .rectangleDiv {
@@ -209,11 +207,16 @@
   background: linear-gradient(180deg, #3fabff, #222);
 }
 
-.groupChild1,
+/* .groupChild1, */
 .groupChild2,
 .rectangleDiv {
   top: 4613px;
   left: 679px;
+}
+
+.groupChild1 {
+  top: 519px !important;
+  left: 130px !important;
 }
 
 .groupChild1,
@@ -234,7 +237,6 @@
   left: 73px;
 }
 
-.learnMore1,
 .sendMessage {
   position: absolute;
   top: 4632px;
@@ -242,8 +244,10 @@
 }
 
 .learnMore1 {
-  top: 19px;
-  left: 39px;
+  top: 535px !important;
+  left: 160px;
+  color: #FFFF;
+  position: absolute;
 }
 
 .groupDiv,
@@ -317,9 +321,9 @@
   color: var(--color-gray-300);
   text-align: left;
 }
-@media (max-width:991px) {
-  
-}
+
+@media (max-width:991px) {}
+
 .feelFreeToContactWithUsParent {
   position: absolute;
   top: 3955px;
@@ -628,7 +632,7 @@
   position: absolute;
   height: 1.34%;
   width: 4.88%;
-  top: 14.58%;
+  top: 12.58%;
   right: 49.69%;
   bottom: 84.08%;
   left: 45.44%;
@@ -651,7 +655,7 @@
 .webAdnEmail {
   position: absolute;
   top: 1685px;
-  left: 249px;
+  left: 220px;
   font-size: var(--font-size-lgi);
   font-weight: 300;
   color: var(--color-black);
@@ -663,7 +667,7 @@
 }
 
 .webAdnEmail {
-  top: 1771px;
+  top: 1765px;
 }
 
 .forwardThinkingTeamContainer,
@@ -718,14 +722,14 @@
   position: absolute;
   top: 1437px;
   left: 210px;
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   font-weight: 600;
   color: var(--color-steelblue-200);
 }
 
 .aboutUs1,
 .ourCapabilities {
-  top: 1970px;
+  top: 2000px;
   display: inline-block;
   width: 232px;
 }
@@ -742,7 +746,7 @@
   position: absolute;
   height: 5.95%;
   width: 48.44%;
-  top: 25.36%;
+  top: 26.7%;
   right: 5.69%;
   bottom: 68.69%;
   left: 45.88%;
@@ -756,7 +760,7 @@
 .vectorIcon3 {
   height: 0.38%;
   width: 1.38%;
-  top: 28.92%;
+  top: 31.4%;
   right: 85.5%;
   bottom: 70.7%;
   left: 11.7%;
@@ -769,7 +773,7 @@
   .vectorIcon3 {
     height: 0.38%;
     width: 5.38%;
-    top: 23.6%;
+    top: 31.5% !important;
     right: 85.5%;
     bottom: 70.7%;
     left: 7.13%;
@@ -777,12 +781,12 @@
 
   .vectorIcon2,
   .vectorIcon3 {
-    top: 24.2% !important;
+    top: 32.3% !important;
     bottom: 69.98%;
   }
 
   .vectorIcon3 {
-    top: 24.8% !important;
+    top: 33.1% !important;
     bottom: 69.23%;
   }
 
@@ -790,7 +794,7 @@
   .uiuxDesignWith,
   .webAdnEmail {
     position: absolute;
-    top: 1375px;
+    top: 1390px;
     left: 60px !important;
     font-size: var(--font-size-lgi);
     font-weight: 300;
@@ -799,23 +803,23 @@
 
   .uiuxDesignWith,
   .webAdnEmail {
-    top: 1409px !important;
+    top: 1430px !important;
     left: 60px !important;
   }
 
   .webAdnEmail {
-    top: 1440px !important;
+    top: 1467px !important;
   }
 }
 
 .vectorIcon2,
 .vectorIcon3 {
-  top: 29.64%;
+  top: 32%;
   bottom: 69.98%;
 }
 
 .vectorIcon3 {
-  top: 30.4%;
+  top: 32.8%;
   bottom: 69.23%;
 }
 
@@ -905,7 +909,7 @@
   position: absolute;
   height: 7.32%;
   width: 35.56%;
-  top: 33.75%;
+  top: 36%;
   right: 12.31%;
   bottom: 58.94%;
   left: 52.13%;
@@ -1464,10 +1468,27 @@
   position: relative;
   background-color: var(--color-white);
   width: 100%;
-  /* height: 5823px; */
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--color-gray-400);
   font-family: var(--font-roboto);
+}
+
+@media (max-width: 991px) {
+  .rectangleParent {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-gray-400);
+    font-family: var(--font-roboto);
+  }
+
+  .p {
+    font-size: 15px;
+  }
+
 }

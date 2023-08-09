@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useMediaQuery } from "react-responsive";
+import "animate.css"
 import style from "../Cards/service.module.css"
 
 const Testimonial = () => {
@@ -59,9 +60,9 @@ const Testimonial = () => {
         <div>
             <Mobile>
 
-                <section id="testimonials" className="testimonials">
+                <section id="testimonials" className="testimonials animate__animated animate__backInLeft">
 
-                    <div className="container" data-aos="fade-up">
+
 
                         <header className="section-header">
                             <h2>Testimonials</h2>
@@ -162,13 +163,11 @@ const Testimonial = () => {
                                     </div>
                                 </Slider>
                             </div>
-                        </div>
-
                     </div>
                 </section>
             </Mobile>
             <Desktop>
-                <section id="testimonials" className="testimonials">
+                <section id="testimonials" className="testimonials animate__animated animate__backInLeft">
                     <div className="container-fluid">
                         <header className="section-header">
                             <h2>Testimonials</h2>

@@ -12,7 +12,7 @@ const Partic = () => {
 
     if (particles) {
       particles.particles.move.enable = true;
-      particles.particles.move.speed = 4;
+      particles.particles.move.speed = 1;
       particles.particles.move.direction = "right";
       particles.particles.move.random = false;
       particles.particles.move.straight = false;
@@ -92,19 +92,19 @@ const Partic = () => {
             color: {
               value: ["#FF0000", "#000000"],
             },
-            links: {
-              color: "#ffffff",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
+            // links: {
+            //   color: "#ffffff",
+            //   distance: 150,
+            //   enable: true,
+            //   opacity: 0.5,
+            //   width: 1,
+            // },
             collisions: {
               enable: true,
             },
             move: {
               enable: true,
-              speed: 2,
+              speed: 1,
               direction: "right",
               random: false,
               straight: false,
@@ -145,9 +145,9 @@ const Partic = () => {
                   number: {
                     value: 80, // Decrease the number of particles for mobile screens
                   },
-                  links: {
-                    distance: 100, // Decrease the distance between particles for mobile screens
-                  },
+                  // links: {
+                  //   distance: 100, // Decrease the distance between particles for mobile screens
+                  // },
                 },
               },
             },

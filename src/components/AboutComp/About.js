@@ -85,29 +85,29 @@ const About = () => {
                         <div className={style.parent}>
                             <div className={currentSlide === 0 ? style.center : style.side} key={0}>
                                 <div className="col-md-3 col-sm-3 " >
-                                <div className="box text-center p-4">
-                                    <div className="number" data-to="20" data-speed="150" ></div>
-                                    <div className="title">Software Development</div>
-                                </div>
+                                    <div className="box text-center p-4">
+                                        <div className="number" data-to="20" data-speed="150" ></div>
+                                        <div className="title">Software Development</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className={style.parent} >
                             <div className={currentSlide === 1 ? style.center : style.side} key={1}>
                                 <div className="col-md-3 col-sm-3 " key={2}>
-                                <div className="box text-center p-4">
-                                    <div className="number" data-to="200" data-speed="150"></div>
-                                    <div className="title">Graphic Design</div>
-                                </div>
+                                    <div className="box text-center p-4">
+                                        <div className="number" data-to="200" data-speed="150"></div>
+                                        <div className="title">Graphic Design</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div className={style.parent}>
                             <div className={currentSlide === 2 ? style.center : style.side} key={2}>
                                 <div className="col-md-3 col-sm-3 " key={3}>
-                                <div className="box text-center p-4">
-                                    <div className="number" data-to="200" data-speed="150"></div>
-                                    <div className="title">Game Design</div>
+                                    <div className="box text-center p-4">
+                                        <div className="number" data-to="200" data-speed="150"></div>
+                                        <div className="title">Game Design</div>
                                     </div>
                                 </div>
                             </div>
@@ -115,11 +115,11 @@ const About = () => {
                         <div className={style.parent}>
                             <div className={currentSlide === 3 ? style.center : style.side} key={3}>
                                 <div className="col-md-3 col-sm-3 " key={4}>
-                                <div className="box text-center p-4">
-                                    <div className="number" data-to="200" data-speed="150"></div>
-                                    <div className="title"> Web Development</div>
+                                    <div className="box text-center p-4">
+                                        <div className="number" data-to="200" data-speed="150"></div>
+                                        <div className="title"> Web Development</div>
+                                    </div>
                                 </div>
-</div>
                             </div>
                         </div>
                     </Slider>
@@ -127,6 +127,7 @@ const About = () => {
                 </div >
             </Mobile >
             <Desktop>
+
                 <div className={styles.frameChild14} />
                 <div className={styles.innovativeWebsiteDesign}>
                     Innovative website Design

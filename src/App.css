@@ -52,6 +52,31 @@ body {
   list-style: none;
 }
 
+.ul li {
+
+  position: relative;
+
+}
+
+.ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  margin: 45px 18px;
+  background: linear-gradient(0deg, #00a6ff, #00aeff);
+  /*Follow your text color*/
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.ul li:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 .home {
   text-decoration: none;
   margin-left: 25px;
@@ -69,6 +94,12 @@ body {
 }
 
 .contact {
+  text-decoration: none;
+  margin-top: 10vh;
+  /* margin-left: 25px; */
+}
+
+.contact1 {
   text-decoration: none;
   margin-top: 10vh;
   margin-left: 25px;
@@ -152,9 +183,11 @@ li a:hover {
   /* font-size: 14px; */
   background-color: #F9FAFC;
 }
-#footer .footer-top{
+
+#footer .footer-top {
   background-color: #F9FAFC;
 }
+
 #footer .footer-newsletter {
   padding: 50px 0;
   background: #eff2f8;
@@ -233,6 +266,7 @@ li a:hover {
   font-family: "Raleway", sans-serif;
   color: #8a8c95;
 }
+
 @media (max-width:991px) {
   #footer .footer-top .footer-contact p {
     font-size: 14px !important;
@@ -242,6 +276,7 @@ li a:hover {
     color: #8a8c95;
   }
 }
+
 #footer .footer-top h4 {
   font-size: 25px;
   font-weight: bold;
@@ -341,13 +376,15 @@ li a:hover {
 
 /* testimonials */
 .testimonials {
-  margin-top: 230vh;
+  margin-top: 270vh;
 }
+
 @media (max-width:991px) {
   .testimonials {
     margin-top: 0vh !important;
   }
 }
+
 .testimonials .testimonial-item {
   box-sizing: content-box;
   padding: 30px;
@@ -580,7 +617,7 @@ property --num {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #000000;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -620,26 +657,46 @@ property --num {
   margin-top: 30px;
 }
 
+@media (max-width:991px) {
+
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    height: 50px;
+    margin-top: 20px !important;
+  }
+
+  .groupimg {
+    display: none !important;
+  }
+}
+
+.groupimg {
+  display: block;
+  margin-top: -40px;
+}
+
 .contact .php-email-form textarea {
   padding: 10px 12px;
-height: 229px;
+  height: 229px;
 }
 
 
 .contact .php-email-form button[type=submit] {
   border-radius: 20px;
-  background: linear-gradient(180deg, #3FABFF 0%, #222 100%);
+  background: linear-gradient(180deg, #3FABFF 100%, #222 100%);
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   width: 180px;
   margin-top: 20px;
+  border: 2px solid #fff;
   font-size: 15px;
+  cursor: pointer;
   height: 60px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #00805d;
+  background: #00aeff;
 }
 
 @keyframes animate-loading {
