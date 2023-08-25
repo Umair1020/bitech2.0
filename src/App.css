@@ -535,24 +535,25 @@ li a:hover {
 }
 
 .box {
-  background-color: #ffffff;
+  background-color: #009cd6;
   /* White background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   /* Box shadow with increased opacity */
   height: 150px;
   display: flex;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
 }
 
 .number {
-  color: #009cd6;
+  color: #ffffff;
   font-size: 40px;
   font-weight: bold;
 }
 
 .title {
-  color: #616161;
+  color: #ffffff;
   font-size: 20px;
 }
 

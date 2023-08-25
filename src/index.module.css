@@ -56,7 +56,19 @@
   height: 56px;
   color: var(--color-white);
 }
-
+@media (max-width: 991px) {
+  .wereADigital {
+    margin: 0;
+    font-size: 32px !important;
+  }
+  .wereADigital1 {
+    margin: 0;
+    font-size: 22px !important;
+  }
+  .loremIpsumIs{
+    top:""
+  }
+}
 .wereADigital {
   margin: 0;
   font-size: 62px;
@@ -86,7 +98,7 @@
 
   .loremIpsumIs {
     position: absolute;
-    top: 280px !important;
+    top: 245px !important;
     left: 20px !important;
     font-weight: 300;
     display: inline-block;
@@ -778,7 +790,7 @@
   .vectorIcon3 {
     height: 0.38%;
     width: 5.38%;
-    top: 31.5% !important;
+    top: 30.6% !important;
     right: 85.5%;
     bottom: 70.7%;
     left: 7.13%;
@@ -786,12 +798,12 @@
 
   .vectorIcon2,
   .vectorIcon3 {
-    top: 32.3% !important;
+    top: 31.4% !important;
     bottom: 69.98%;
   }
 
   .vectorIcon3 {
-    top: 33.1% !important;
+    top: 32.2% !important;
     bottom: 69.23%;
   }
 
@@ -799,7 +811,7 @@
   .uiuxDesignWith,
   .webAdnEmail {
     position: absolute;
-    top: 1390px;
+    top: 1350px;
     left: 60px !important;
     font-size: var(--font-size-lgi);
     font-weight: 300;
@@ -808,12 +820,12 @@
 
   .uiuxDesignWith,
   .webAdnEmail {
-    top: 1430px !important;
+    top: 1380px !important;
     left: 60px !important;
   }
 
   .webAdnEmail {
-    top: 1467px !important;
+    top: 1415px !important; 
   }
 }
 

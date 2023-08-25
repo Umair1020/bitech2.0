@@ -41,10 +41,6 @@ const Landingpage = () => {
       </div>
 
       {/* <div className={styles.ourServices}>{`Our Services & Our Goal`}</div> */}
-
-
-
-
       {/* <div className={`animate__animated animate__fadeInDown ${styles.services}`}>SERVICES</div> */}
       {/* <div className={styles.testimonials}>TESTIMONIALS</div> */}
       {/* <div className={styles.feelFreeToContactWithUsParent}>
@@ -62,11 +58,11 @@ const Landingpage = () => {
       </div> */}
       <Servicecard />
       <About />
-<br /><br /><br /><br />
+      {/* <br /><br /><br /><br /> */}
       <Testimonial />
       <Contact />
       <Footer className="animate__animated animate__backInLeft" />
-      
+
       <div className="whatsapp">
         <a href="https://wa.me/+923043275451" target="_blank" className='  btn btn-success text-light animate__heartBeat' data-aos="fade-down"  ><i className="fab fa-whatsapp"></i></a>
       </div>
