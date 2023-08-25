@@ -77,7 +77,7 @@ const Testimonial = () => {
                                                 <div className="testimonial-item" key={0}>
                                                     <div className="profile mt-auto">
                                                         <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" />
-                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <img alt="" src="/group-10.svg" className="m-auto star" />
                                                         <h3>Saul Goodman</h3>
                                                         <h4>Ceo &amp; Founder</h4>
                                                     </div>
@@ -95,7 +95,7 @@ const Testimonial = () => {
                                                 <div className="testimonial-item">
                                                     <div className="profile mt-auto">
                                                         <img src="/ellipse-18@2x.png" class="testimonial-img" alt="" />
-                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <img alt="" src="/group-10.svg" className="m-auto star" />
                                                         <h3>Sara Wilsson</h3>
                                                         <h4>Designer</h4>
                                                     </div>
@@ -113,7 +113,7 @@ const Testimonial = () => {
                                                 <div className="testimonial-item" key={2}>
                                                     <div className="profile mt-auto">
                                                         <img src="/ellipse-19@2x.png" class="testimonial-img" alt="" />
-                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <img alt="" src="/group-10.svg" className={`m-auto ${styles.star}`} />
                                                         <h3>Jena Karlis</h3>
                                                         <h4>Store Owner</h4>
                                                     </div>
@@ -184,7 +184,7 @@ const Testimonial = () => {
                                                 <div className="testimonial-item" key={0}>
                                                     <div className="profile mt-auto">
                                                         <img src="/ellipse-17@2x.png" class="testimonial-img" alt="" /><br />
-                                                        <img alt="" src="/group-10.svg" className="m-auto" />
+                                                        <img alt="" src="/group-10.svg" className={`m-auto ${styles.star}`} />
                                                         <h3>Saul Goodman</h3>
                                                         <h4>Ceo &amp; Founder</h4>
                                                     </div>
@@ -202,7 +202,7 @@ const Testimonial = () => {
                                             <div className="testimonial-item">
                                                 <div className="profile mt-auto">
                                                     <img src="/ellipse-18@2x.png" class="testimonial-img" alt="" /><br />
-                                                    <img alt="" src="/group-10.svg" className="m-auto" />
+                                                    <img alt="" src="/group-10.svg" className={`m-auto ${styles.star}`} />
                                                     <h3>Sara Wilsson</h3>
                                                     <h4>Designer</h4>
                                                 </div>
@@ -218,7 +218,7 @@ const Testimonial = () => {
                                             <div className="testimonial-item" key={2}>
                                                 <div className="profile mt-auto">
                                                     <img src="/ellipse-19@2x.png" class="testimonial-img" alt="" /><br />
-                                                    <img alt="" src="/group-10.svg" className="m-auto" />
+                                                    <img alt="" src="/group-10.svg" className={`m-auto ${styles.star}`} />
                                                     <h3>Jena Karlis</h3>
                                                     <h4>Store Owner</h4>
                                                 </div>

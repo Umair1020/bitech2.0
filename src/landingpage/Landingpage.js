@@ -21,15 +21,15 @@ const Landingpage = () => {
         <div className="row">
           <div className="col-6 ">
             <div className={styles.wereADigitalContainer}>
-              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>Welcome to BITECH 
+              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>Welcome to BITECH
               </p>
-              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>{` Visualizing Your Ideas   `}</p>
-              <p className={`animate__animated animate__backInLeft ${styles.wereADigital}`}>with Innovative Solutions</p>
+              <p className={`animate__animated animate__backInLeft ${styles.wereADigital1}`}>{` Visualizing Your Ideas   `}</p>
+              <p className={`animate__animated animate__backInLeft ${styles.wereADigital1}`}>with Innovative Solutions</p>
             </div>
             <div className={`animate__animated animate__fadeInUp ${styles.loremIpsumIs}`}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum
-            </div> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            </div> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <button className={style.btn}>
               <p className={style.p}>Learn More</p>
             </button>
@@ -62,10 +62,15 @@ const Landingpage = () => {
       </div> */}
       <Servicecard />
       <About />
-
+<br /><br /><br /><br />
       <Testimonial />
       <Contact />
       <Footer className="animate__animated animate__backInLeft" />
+      
+      <div className="whatsapp">
+        <a href="https://wa.me/+923043275451" target="_blank" className='  btn btn-success text-light animate__heartBeat' data-aos="fade-down"  ><i className="fab fa-whatsapp"></i></a>
+      </div>
+      <br />
     </div>
   );
 };

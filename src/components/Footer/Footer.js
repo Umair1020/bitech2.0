@@ -30,16 +30,6 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                {/* <div class="col-sm-3 footer-links">
-                                    <h4>Quick Links</h4>
-                                    <ul>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">SiteMap</a></li>
-                                    </ul>
-                                </div> */}
 
                                 <div class="col-sm-3 footer-links">
                                     <h4>Contact Us</h4>
@@ -50,15 +40,6 @@ const Footer = () => {
                                     </ul>
                                 </div>
 
-                                {/* <div class="col-sm-3 footer-links">
-                                    <h4>Get Help</h4>
-                                    <ul>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Our Team</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Partner</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Blog</a></li>
-                                    </ul>
-                                </div> */}
                                 <br />   <br />  <br />   <br /> <br />   <br />
                                 <hr />
                                 <div className="text-center fs-6">
@@ -86,6 +67,7 @@ const Footer = () => {
                             <div class="row">
 
                                 <div class="col-lg-6 col-md-6 footer-contact">
+                                    <br />
                                     <h3>Bitech</h3>
                                     <p>
                                         Welcome to BiTech - Visualizing Your Ideas with Innovative Solutions At BiTech, we let our work do the talking. As a leading software house, we specialize in crafting exceptional apps and software solutions that empower your business to thrive in the digital world. Our team of skilled developers, designers, and creative minds work collaboratively to provide you with seamless user experiences and visually captivating graphic designs.
@@ -93,18 +75,8 @@ const Footer = () => {
                                     </p>
                                 </div>
 
-                                {/* <div class="col-sm-3 footer-links">
-                                    <h4>Quick Links</h4>
-                                    <ul>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Gallery</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">SiteMap</a></li>
-                                    </ul>
-                                </div> */}
-
                                 <div class="col-lg-6 col-md-6 col-sm-6 footer-links">
+                                <br />
                                     <h4 className="text-end">Contact Us</h4>
                                     <ul className="list-unstyled text-end">
                                         <li className="text-end"><i class="bx bx-chevron-right"></i> A-37, Sector 62, Noida-20</li>
@@ -112,16 +84,6 @@ const Footer = () => {
                                         <li className="text-end"><i class="bx bx-chevron-right"></i> xyz@gmail.com</li>
                                     </ul>
                                 </div>
-
-                                {/* <div class="col-sm-3 footer-links">
-                                    <h4>Get Help</h4>
-                                    <ul>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Our Team</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Partner</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">FAQ</a></li>
-                                        <li><i class="bx bx-chevron-right"></i> <a href="#">Blog</a></li>
-                                    </ul>
-                                </div> */}
 
                                 <hr />
                                 <div className="row">

@@ -129,7 +129,7 @@ const Servicecard = () => {
                     <div className="row d-flex justify-content-center align-items-center">
                         <p className="text-secondary fw-bold text-center">Service</p>
                         <h1 className="text-dark fw-bold text-center">Our Services & Our Goal</h1>
-                        <div className="col-md-3 col-sm-6 mx-5" >
+                        <div className="col-lg-4 " >
 
                             <div className={style.card1} >
                                 <div> <br />
@@ -142,14 +142,14 @@ const Servicecard = () => {
                                 <p className={style.logonDesign}>Label Design</p>
                                 <p className={style.logonDesign}>Letterhead</p>
                                 <p className={style.logonDesign}>Billboard Design</p>
-                                
+
                                 <button className={style.btn}>
                                     <p className={style.p}>Learn More</p>
                                 </button>
 
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-6 mx-5" >
+                        <div className="col-lg-4  " >
 
                             <div className={style.card2} >
                                 <div className={style.serviceicon}> <br />
@@ -167,7 +167,7 @@ const Servicecard = () => {
 
                             </div>
                         </div>
-                        <div className="col-md-3 col-sm-6 mx-5" >
+                        <div className="col-lg-4 " >
 
                             <div className={style.card1} >
                                 <div><br />
@@ -180,7 +180,7 @@ const Servicecard = () => {
                                 <p className={style.logonDesign}>Label Design</p>
                                 <p className={style.logonDesign}>Letterhead</p>
                                 <p className={style.logonDesign}>Billboard Design</p>
-                               
+
                                 <button className={style.btn}>
                                     <p className={style.p}>Learn More</p>
                                 </button>

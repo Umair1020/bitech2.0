@@ -59,13 +59,17 @@
 
 .wereADigital {
   margin: 0;
+  font-size: 62px;
 }
-
+.wereADigital1 {
+  margin: 0;
+  font-size: 40px;
+}
 .wereADigitalContainer {
   position: absolute;
   top: 199px;
   /* left: 211px; */
-  font-size: 62px;
+ 
   font-weight: 600;
 }
 
@@ -170,7 +174,7 @@
 
 .loremIpsumIs {
   position: absolute;
-  top: 436px;
+  top: 386px;
   font-weight: 300;
   display: inline-block;
   width: 509px;
@@ -654,8 +658,8 @@
 .uiuxDesignWith,
 .webAdnEmail {
   position: absolute;
-  top: 1685px;
-  left: 220px;
+  top: 1705px;
+  left: 210px;
   font-size: var(--font-size-lgi);
   font-weight: 300;
   color: var(--color-black);
@@ -663,11 +667,11 @@
 
 .uiuxDesignWith,
 .webAdnEmail {
-  top: 1727px;
+  top: 1740px;
 }
 
 .webAdnEmail {
-  top: 1765px;
+  top: 1780px;
 }
 
 .forwardThinkingTeamContainer,
@@ -676,9 +680,10 @@
   position: absolute;
   top: 1464px;
   left: 208px;
-  font-size: var(--font-size-26xl);
+  font-size: 50px;
   font-weight: 600;
 }
+
 
 .forwardThinkingTeamContainer,
 .forwardThinkingTeamContainer1 {
@@ -702,17 +707,17 @@
   font-weight: 300;
   color: var(--color-dimgray-200);
   display: inline-block;
-  width: 530px;
+  width: 390px;
 }
 
 .loremIpsumIs2,
 .loremIpsumIs3 {
-  top: 2158px;
+  top: 2150px;
   left: 208px;
 }
 
 .loremIpsumIs3 {
-  top: 2730px;
+  top: 2700px;
   left: 802px;
 }
 
@@ -746,7 +751,7 @@
   position: absolute;
   height: 5.95%;
   width: 48.44%;
-  top: 26.7%;
+  top: 32.7%;
   right: 5.69%;
   bottom: 68.69%;
   left: 45.88%;
@@ -909,7 +914,7 @@
   position: absolute;
   height: 7.32%;
   width: 35.56%;
-  top: 36%;
+  top: 44%;
   right: 12.31%;
   bottom: 58.94%;
   left: 52.13%;
@@ -1178,12 +1183,15 @@
 .vistiUs {
   left: 1107px;
 }
-
+.star{
+  font-size: 20px;
+  width: 120px;
+}
 .groupIcon2 {
   position: absolute;
   height: 11.55%;
   width: 33.04%;
-  top: 78.5%;
+  top: 79.5%;
   right: 61.09%;
   bottom: 9.95%;
   left: 5.88%;
