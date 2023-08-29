@@ -136,13 +136,12 @@ const Servicecard = () => {
                                     <img className={style.image} src="/serviceicon.png" />
                                 </div><br />
                                 <h3>Development</h3>
-                                <p className={styles.logonDesign}>Logon Design</p>
-                                <p className={style.logonDesign}>Business Card</p>
-                                <p className={style.logonDesign}>Stationery</p>
-                                <p className={style.logonDesign}>Label Design</p>
-                                <p className={style.logonDesign}>Letterhead</p>
-                                <p className={style.logonDesign}>Billboard Design</p>
-
+                                <p className={styles.logonDesign}>Web Application</p>
+                                <p className={style.logonDesign}>Mobile Application</p>
+                                <p className={style.logonDesign}>Wordpress</p>
+                                <p className={style.logonDesign}>Cloud Hosting</p>
+                                <p className={style.logonDesign}>Game Development</p>
+                                
                                 <button className={style.btn}>
                                     <p className={style.p}>Learn More</p>
                                 </button>

@@ -38,7 +38,7 @@ const Header = () => {
             {/* <div className={styles.homeAboutUsContainer}> */}
               <ul className="ul my-2" style={{ display: "flex", listStyle: "none" }}>
                 <li> <Link to='/' className="home">Home</Link></li>
-                <li> <Link to='/about' className="about">About Us</Link></li>
+                <li> <Link to='/' className="about">About Us</Link></li>
                 <li><Link to='/' className="app">Our Team</Link></li>
                 <li><Link to='/' className="contact1">Contact</Link></li>
               </ul>
@@ -65,10 +65,10 @@ const Header = () => {
             <a href="javascript:void(0)" className="closebtn" onClick={closeNav}><FaTimes /></a>
             <div className="ul">
               <Link href="/">Home</Link>
-              <Link href="/about" >About</Link>
-              <Link href="/services">Services</Link>
-              <Link href="/portfolio">Portfolio</Link>
-              <Link href="/contact">Contact</Link>
+              <Link href="/" >About</Link>
+              <Link href="/">Services</Link>
+              <Link href="/">Portfolio</Link>
+              <Link href="/">Contact</Link>
             </div>
           </div>
           <span className={headercss.span1} style={{ fontSize: '30px', cursor: 'pointer', marginLeft: "320px", color: "#000" }} onClick={openNav}><FaBars /></span>
